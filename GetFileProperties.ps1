@@ -84,6 +84,9 @@ function Get-MetaData {
 			"Product" {
 				$MetaDataObject | Add-Member -MemberType NoteProperty -Name Product -Value $Property[1]
 			}
+			"ProductVersion" {
+				$MetaDataObject | Add-Member -MemberType NoteProperty -Name ProductVersion -Value $($Property[1] + " " + $Property[2] + " " + $Property[3] + " "  +$Property[4] + $Property[5]+$Property[6]+$Property[7])
+			}
 			"Debug" {
 				$MetaDataObject | Add-Member -MemberType NoteProperty -Name Debug -Value $Property[1]
 			}

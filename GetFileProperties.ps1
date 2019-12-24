@@ -141,7 +141,7 @@ function Get-RelativePath {
 
 Clear-Host
 $RelativePath = Get-RelativePath
-$File = $RelativePath + "scepinstall.exe"
+$File = $RelativePath + "bin\Release\net48\System.ComponentModel.Annotations.dll"
 $FileMetaData = Get-MetaData -FileName $File
 #Example of displaying all returned values
 $FileMetaData
